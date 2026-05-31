@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Studynex Pdf</title>
+    <meta name="description" content="Studynex Pdf exam store for SSC, Railway, State Exams and more.">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">
+        <span class="brand-mark">S</span>
+        <span>
+          <strong>Studynex</strong>
+          <small>Pdf</small>
+        </span>
+      </a>
+      <nav class="top-nav" aria-label="Primary">
+        <a href="#store">Store</a>
+        <a href="#subjects">Subjects</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-band">
+        <div class="hero-copy">
+          <p class="eyebrow">SSC, Railway, State Exams, Defence</p>
+          <h1>Exam PDFs jo revision ko fast aur focused banaye.</h1>
+          <p class="hero-text">
+            History, Geography, Polity, Economics, Physics, Biology, Current Affairs,
+            Static GK aur aur bhi exam-ready study material ek jagah.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#store">PDFs dekhein</a>
+          </div>
+        </div>
+        <div class="hero-showcase" aria-label="Featured PDF subjects">
+          <div class="mini-poster red">
+            <span>History</span>
+            <strong>SSC Notes</strong>
+            <small>Ancient to Modern</small>
+          </div>
+          <div class="mini-poster blue">
+            <span>Geography</span>
+            <strong>Map Booster</strong>
+            <small>India + World</small>
+          </div>
+          <div class="mini-poster green">
+            <span>GK</span>
+            <strong>Static Pack</strong>
+            <small>One-liners</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-strip" aria-label="Store highlights">
+        <div>
+          <strong id="pdfCount">0+</strong>
+          <span>PDF Packs</span>
+        </div>
+        <div>
+          <strong>11</strong>
+          <span>Subjects</span>
+        </div>
+        <div>
+          <strong>All</strong>
+          <span>Competitive Exams</span>
+        </div>
+      </section>
+
+      <section class="store-shell" id="store">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">PDF Collection</p>
+            <h2>Latest study packs</h2>
+          </div>
+          <label class="search-box">
+            <span>Search</span>
+            <input id="searchInput" type="search" placeholder="History, GK, SSC...">
+          </label>
+        </div>
+
+        <div class="filters" id="categoryFilters" aria-label="Subject filters"></div>
+        <div class="product-grid" id="productGrid"></div>
+        <p class="empty-state" id="emptyState" hidden>No PDF found for this search.</p>
+      </section>
+
+      <section class="subjects-band" id="subjects">
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow">Subjects</p>
+            <h2>Exam syllabus coverage</h2>
+          </div>
+        </div>
+        <div class="subject-list" id="subjectList"></div>
+      </section>
+    </main>
+
+    <dialog class="buy-modal" id="buyDialog">
+      <form method="dialog" class="modal-close-form">
+        <button class="icon-button" aria-label="Close">x</button>
+      </form>
+      <div id="modalContent"></div>
+    </dialog>
+
+    <footer class="site-footer">
+      <strong>Studynex Pdf</strong>
+      <span>Payment gateway baad me connect hoga. Abhi buyer requests backend me save hoti hain.</span>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
