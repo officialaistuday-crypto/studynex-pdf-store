@@ -1,0 +1,8 @@
+node_modules/
+uploads/pdfs/*
+uploads/posters/*
+!uploads/pdfs/.gitkeep
+!uploads/posters/.gitkeep
+data/orders.json
+.env
+*.log
